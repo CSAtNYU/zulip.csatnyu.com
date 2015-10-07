@@ -2,14 +2,14 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: Your Awesome Site
-email: your-email@domain.com
-author: Your Name
-description: > # "Write an awesome description for your new site here. 
-  You can edit this line in _config.yml. It will appear in your document 
-  head meta (for Google search results) and in your feed.xml site 
-  description."
+url: http://zulip.csatnyu.com
+title: CS@NYU
+email: andrew.drozdov@nyu.edu
+author: CS@NYU
+description: > # "CS@NYU is a community for NYU Compute Science
+  students. Conversations are focused on technical tips, news and
+  events. The platform uses Zulip, a wonderful open source group
+  chat."
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -24,9 +24,7 @@ permalink: pretty
 # ----------------------- #
 
 social:
-  - title: twitter
-    url: https://twitter.com/SBootstrap
   - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
-  - title: linkedin
-    url: 
+    url: https://github.com/CSAtNYU
+  - title: email
+    url: mailto:andrew.drozdov@nyu.edu

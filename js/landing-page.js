@@ -29,3 +29,38 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+var domain = 'nyu.edu';
+
+// http://stackoverflow.com/questions/280634/endswith-in-javascript
+String.prototype.endsWith = function(suffix) {
+    return this.indexOf(suffix, this.length - suffix.length) !== -1;
+};
+
+// http://stackoverflow.com/questions/2507030/email-validation-using-jquery
+function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+}
+
+function validateEmail (email, domain) {
+    return isEmail(email) && email.endsWith(domain);
+}
+
+$('#input-email .btn').on('click', function () {
+    var email = $('#input-email input').val();
+
+    console.log(email);
+
+    $('#input-email .input-success').css('display', 'none');
+
+    if (validateEmail(email, domain)) {
+        console.log('success');
+        $('#input-email input').val('');
+        $('#input-email .input-error').css('display', 'none');
+        $('#input-email .input-success').css('display', 'block');
+    } else {
+        console.log('fail');
+        $('#input-email .input-error').css('display', 'block');
+    }
+});

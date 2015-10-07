@@ -1,10 +1,10 @@
 ---
 layout: default
-img: dog.png
-category: Services
-title: 3D Device Mockups<br>by PSDCovers
+img: da-rules.jpg
+category: About
+title: Code of Conduct
 description: |
 ---
-  Turn your 2D designs into high quality, 3D
-  product shots in seconds using free Photoshop actions by [PSDCovers](http://www.psdcovers.com/)! Visit
-  their website to download some of their awesome, free photoshop actions!
+  The [Code of Conduct](https://github.com/CSAtNYU/code-of-conduct) provides a safe and productive environment for all participants.
+
+  It's available on [Github](https://github.com/CSAtNYU/code-of-conduct). You can even propose a [pull request](https://github.com/CSAtNYU/code-of-conduct/edit/master/README.md).

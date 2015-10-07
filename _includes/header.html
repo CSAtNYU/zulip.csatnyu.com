@@ -13,12 +13,9 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">  
-            	<li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li>            
+            <ul class="nav navbar-nav navbar-right">        
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="#about">About</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -42,13 +39,21 @@
 						<h1>{{ page.title }}</h1>
 						<h3>{{ page.subTitle }}</h3>
 						<hr class="intro-divider">
-						<ul class="list-inline intro-social-buttons">
-							{% for social in site.social %}
-							<li>
-								<a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
-							</li>
-							{% endfor %}
-						</ul>
+                        <div class="col-md-4 col-md-offset-4">
+                            <a href="https://csatnyu.com"><button class="btn btn-primary">Sign Up!</button></a>
+                        </div>
+                        <!-- <div class="col-md-4 col-md-offset-4">
+                            <div id="input-email">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="NYU Email Address">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button">Sign Up</button>
+                                    </span>
+                                </div>
+                                <div class="input-error">Please use an @nyu.edu email address.</div>
+                                <div class="input-success">Success!</div>
+                            </div>
+                        </div> -->
 					</div>
 				</div>
 			</div>
